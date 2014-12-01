@@ -25,13 +25,6 @@ public abstract class Movimiento {
 	/**
 	 * 
 	 * @param tab
-	 * @return
-	 */
-	public abstract boolean ejecutaMovimiento(Tablero tab);
-	
-	/**
-	 * 
-	 * @param tab
 	 */
 	public abstract void undo (Tablero tab);
 	
