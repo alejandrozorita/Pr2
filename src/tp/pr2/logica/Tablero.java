@@ -31,7 +31,7 @@ public class Tablero {
 	 * Muestra el tablero en pantalla.
 	 */
 	public void pintarTablero(){
-		toString(); 
+		System.out.println(toString()); 
 	}
 	
 	/**

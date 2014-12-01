@@ -8,7 +8,7 @@ public class ReglasComplica implements ReglasJuego{
 	@Override
 	public Tablero iniciaTablero() {
 		Tablero t = new Tablero(TX,TY);
-		return null;
+		return t;
 	}
 
 	@Override
@@ -37,7 +37,10 @@ public class ReglasComplica implements ReglasJuego{
 	
 	public static void main(String[] args) 
 	{
-
+		ReglasComplica reaglasComplica = new ReglasComplica();
+		Tablero t = reaglasComplica.iniciaTablero();
+		t.pintarTablero();
+		
 	}
 
 }
