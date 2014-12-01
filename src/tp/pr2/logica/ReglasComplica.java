@@ -3,7 +3,6 @@
  */
 package tp.pr2.logica;
 
-<<<<<<< Updated upstream:src/tp/pr2/logica/ReglasComplica.java
 <<<<<<< HEAD:src/tp/pr2/logica/ReglasComplica.java
 /**
  * @author NicolasAndres
@@ -12,8 +11,6 @@ package tp.pr2.logica;
 public class ReglasComplica {
 =======
 <<<<<<< HEAD
-=======
->>>>>>> Stashed changes:src/tp/pr2/logica/Movimiento.java
 public abstract class Movimiento {
 
 	public Movimiento() 
@@ -55,7 +52,6 @@ public abstract class Movimiento {
 	 */
 	public static void main(String[] args) 
 	{
-<<<<<<< Updated upstream:src/tp/pr2/logica/ReglasComplica.java
 =======
 public class Movimiento {
 >>>>>>> origin/master:src/tp/pr2/logica/Movimiento.java
@@ -67,9 +63,6 @@ public class Movimiento {
 >>>>>>> FETCH_HEAD
 		// TODO Auto-generated method stub
 
-=======
-		
->>>>>>> Stashed changes:src/tp/pr2/logica/Movimiento.java
 	}
 
 }
