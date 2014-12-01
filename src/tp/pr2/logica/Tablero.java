@@ -26,20 +26,12 @@ public class Tablero {
 			}
 		}
 	}
-	
-	/**
-	 * Constructor, sin valores.
-	 * Crea un tablero predeterminado de 8 por 10.
-	 */
-	public Tablero(){
-		this.tablero  = new Ficha[8][10]; //CONSTRUCTOR SIN VALORES CREA UN TABLERO DE 8,10
-	}
 
 	/**
 	 * Muestra el tablero en pantalla.
 	 */
 	public void pintarTablero(){
-		System.out.println(toString()); 
+		toString(); 
 	}
 	
 	/**
