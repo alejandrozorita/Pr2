@@ -1,8 +1,6 @@
-/**
- * 
- */
 package tp.pr2.logica;
 
+<<<<<<< HEAD:src/tp/pr2/logica/ReglasComplica.java
 <<<<<<< HEAD:src/tp/pr2/logica/ReglasComplica.java
 /**
  * @author NicolasAndres
@@ -55,10 +53,10 @@ public abstract class Movimiento {
 =======
 public class Movimiento {
 >>>>>>> origin/master:src/tp/pr2/logica/Movimiento.java
+=======
+public class Movimiento {
+>>>>>>> parent of 5b80fe9... borrado Movimiento:src/tp/pr2/logica/Movimiento.java
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 >>>>>>> FETCH_HEAD
 		// TODO Auto-generated method stub

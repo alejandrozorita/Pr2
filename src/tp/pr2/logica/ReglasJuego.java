@@ -1,11 +1,10 @@
 package tp.pr2.logica;
 
-<<<<<<< HEAD
+
 public interface ReglasJuego {
-
-
-=======
-public abstract class ReglasJuego {
->>>>>>> FETCH_HEAD
-
+	Tablero iniciaTablero();
+	Ficha jugadorInicial();
+	Ficha hayGanador(Movimiento ultimoMovimiento,Tablero t);
+	boolean tablas(Ficha ultimoEnPoner,Tablero t);
+	Ficha siguienteTurno(Ficha ultimoEnPoner,Tablero t);
 }
