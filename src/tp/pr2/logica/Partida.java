@@ -15,6 +15,7 @@ public class Partida {
 	private int tablas = 0;
 	private boolean reseteada = false;
 
+
 	/**
 	 * Constructor por parametros de Partida
 	 * @param tablero
