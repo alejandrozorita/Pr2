@@ -40,6 +40,7 @@ public abstract class Movimiento {
 	 */
 	public abstract boolean ejecutaMovimiento(Tablero tab);
 	
+	
 	/**
 	 * 
 	 * @param tab
