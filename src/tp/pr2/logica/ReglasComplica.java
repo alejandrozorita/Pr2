@@ -1,7 +1,17 @@
+/**
+ * 
+ */
 package tp.pr2.logica;
 
-public class Movimiento {
+/**
+ * @author NicolasAndres
+ *
+ */
+public class ReglasComplica {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
