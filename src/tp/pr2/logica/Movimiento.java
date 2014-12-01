@@ -1,5 +1,6 @@
 package tp.pr2.logica;
 
+<<<<<<< HEAD
 public abstract class Movimiento {
 
 	public Movimiento() 
@@ -41,6 +42,11 @@ public abstract class Movimiento {
 	 */
 	public static void main(String[] args) 
 	{
+=======
+public class Movimiento {
+
+	public static void main(String[] args) {
+>>>>>>> FETCH_HEAD
 		// TODO Auto-generated method stub
 
 	}
