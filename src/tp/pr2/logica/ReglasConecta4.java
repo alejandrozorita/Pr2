@@ -5,6 +5,10 @@ public class ReglasConecta4 implements ReglasJuego {
 
 	private final int TX = 7, TY = 6;
 	
+	public  ReglasConecta4() {
+		ReglasConecta4 conecta4 = new ReglasConecta4();
+	}
+	
 	@Override
 	public Tablero iniciaTablero() {
 		Tablero t = new Tablero(TX, TY);

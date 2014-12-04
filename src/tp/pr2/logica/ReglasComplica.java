@@ -5,6 +5,10 @@ public class ReglasComplica implements ReglasJuego{
 	private final int TX = 7;
 	private final int TY = 4;
 
+	public ReglasComplica()
+	{
+		ReglasComplica reglasComplica = new ReglasComplica();
+	}
 	@Override
 	public Tablero iniciaTablero() {
 		Tablero t = new Tablero(TX,TY);

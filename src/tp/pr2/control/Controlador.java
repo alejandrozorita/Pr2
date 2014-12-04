@@ -5,8 +5,10 @@ import java.util.Scanner;
 import tp.pr2.logica.Ficha;
 import tp.pr2.logica.Partida;
 import tp.pr2.logica.Tablero;
+import tp.pr2.logica.TipoJuego;
 
 public class Controlador {
+	
 	private Partida partida;
 	private Scanner in;
 	
@@ -18,6 +20,18 @@ public class Controlador {
 	public Controlador(Partida p, Scanner in){
 		partida = p;
 		this.in = in;
+		
+		/*
+		 * PAra reconocer lo que el usuario pone
+		 * PATRON COMAND poara buscar en internet
+		 * 
+		 * comando[] = new Comando[10]
+		 * comando[0] = new ComandoReinicia(....)
+		 * comando[1] = new ComandoSalid(....)
+		 * comando[2] = new ComandoPoner(....)
+		 * 
+		 * 
+		 */
 	}
 	
 	/**
@@ -84,6 +98,16 @@ public class Controlador {
 				break;
 			}
 		} while (enPartida);
+		
+		/*
+		 * 
+		 * Escrito por profesor
+		 */
+		
+		TipoJuego tipojuego;
+		
+		tipoJuego.getReglas();
+		TipoJuego.CONECTA4.getReglas();
 	}	
 	
 	public static void main(String[] args){
