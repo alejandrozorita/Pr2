@@ -7,6 +7,7 @@ package tp.pr2.logica;
  */
 public class Partida {
 	private Tablero tablero;
+	private Undo undo;
 	private Ficha turno;
 	private boolean terminada;
 	private Ficha ganador;
@@ -74,6 +75,10 @@ public class Partida {
 	 */
 	public int getTablas(){
 		return tablas;
+	}
+	
+	private void undo1(){
+		
 	}
 	
 	/**
@@ -469,14 +474,14 @@ public class Partida {
 		}
 		for (int i = 0; i < 11; i++) {
 			System.out.println("undo!");
-			nuevaPartida.undo();
+			nuevaPartida.();
 			NuevoTablero.pintarTablero();
 		}
 		System.out.println(nuevaPartida.getTablas());
 		
 		nuevaPartida.ejecutaMovimiento(nuevaPartida.getTurno(), 1);
 		NuevoTablero.pintarTablero();
-		nuevaPartida.undo();
+		nuevaPartida.();
 		NuevoTablero.pintarTablero();
 	}
 }

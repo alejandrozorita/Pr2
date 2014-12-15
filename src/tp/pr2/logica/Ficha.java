@@ -8,6 +8,10 @@ public enum Ficha {
 	{
 		if(this == NEGRA)
 			return 'x';
+		else if (this == BLANCA) 
+			return 'y';
+		else
+			return ' ';
 	}
 
 }
