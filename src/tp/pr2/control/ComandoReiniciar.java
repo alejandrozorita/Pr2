@@ -25,7 +25,10 @@ public class ComandoReiniciar implements comando{
 		p.reset();
 	}
 
-	public
+	public boolean terminada()
+	{
+		return false;
+	}
 	
 	@Override
 	public boolean terminar() {
