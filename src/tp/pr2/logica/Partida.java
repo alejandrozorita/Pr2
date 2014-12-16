@@ -69,6 +69,11 @@ public class Partida {
 		}
 	}
 	
+	public boolean getReseteada()
+	{
+		return reseteada;
+	}
+	
 	/**
 	 * Devuelve el estado de las jugadas totales
 	 * @return tablas
@@ -77,8 +82,15 @@ public class Partida {
 		return tablas;
 	}
 	
+	/**
+	 * Disminuimos la variable tablas cuando deshacmeos un movimiento
+	 */
+	public void setTablas(){
+		tablas--;
+	}
+	
 	private void undo1(){
-		
+		Undo pila = new Undo();
 	}
 	
 	/**
@@ -92,7 +104,7 @@ public class Partida {
 	/**
 	 * En caso de ser distinto de 0, disminuimos el contador de jugadas 
 	 */
-	private void disminuirContador(){
+	void disminuirContador(){
 		if (contadorArrayJugadas != 0) {
 			contadorArrayJugadas--;
 		}
@@ -474,14 +486,14 @@ public class Partida {
 		}
 		for (int i = 0; i < 11; i++) {
 			System.out.println("undo!");
-			nuevaPartida.();
+			nuevaPartida.ejecutaMovimiento(nuevaPartida.getTurno(), i);
 			NuevoTablero.pintarTablero();
 		}
 		System.out.println(nuevaPartida.getTablas());
 		
 		nuevaPartida.ejecutaMovimiento(nuevaPartida.getTurno(), 1);
 		NuevoTablero.pintarTablero();
-		nuevaPartida.();
+		nuevaPartida.ejecutaMovimiento(nuevaPartida.getTurno(), 2);
 		NuevoTablero.pintarTablero();
 	}
 }

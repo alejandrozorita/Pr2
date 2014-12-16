@@ -2,17 +2,22 @@ package tp.pr2.logica;
 
 public class Undo {
 	
+	private Tablero tablero;
 	private Partida partida;
-	private Tablero tablero
 	private Ficha turno;
-
-	public Undo() {
-		
+	public int [] arrayJugadas;
+	private int contadorArrayJugadas = 0;
+	
+	public Undo(Partida partida) {
+		this.partida = partida;
+		this.tablero = partida.getTablero();
+		this.turno = partida.getTurno();
+		arrayJugadas = new int[10];
 	}
 	
-	public boolean undo(int contadorArrayJugadas, int tablas, boolean reseteada){
+	public Undo(boolean reseteada){
 		boolean ok = true;
-		if (turno == Ficha.BLANCA && contadorArrayJugadas == 0 && tablas == 0){
+		if (turno == Ficha.BLANCA && contadorArrayJugadas == 0 && partida.getTablas() == 0){
 			ok = false;
 		}
 		else if(reseteada) {
@@ -41,15 +46,15 @@ public class Undo {
 			//Ponemos a -1 launcher posicion del array
 			arrayJugadas[contadorArrayJugadas-1] = -1;
 			contadorArrayJugadas = auxContadorArrayJugadas;
-			disminuirContador();
+			partida.disminuirContador();
 			//Quitamos un movimiento en el contador de partida en tablas
-			tablas--;
+			partida.setTablas();
 			//Asignamos el turno
-			setTurno();
+			partida.setTurno();
 			}
 		}
-		return ok;
 	}
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
